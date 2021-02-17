@@ -20,5 +20,4 @@ jobs:
         with:
           node-version: 12
       - run: npm install -g @google/clasp
-      - run: npm install
       - run: npm run push-to-app
