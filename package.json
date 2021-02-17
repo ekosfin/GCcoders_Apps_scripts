@@ -1,0 +1,19 @@
+{
+  "name": "gccoders_apps_scripts",
+  "version": "1.0.0",
+  "description": "for google workshop app scripts",
+  "main": "index.js",
+  "scripts": {
+    "push-to-app": "clasp push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekosfin/GCcoders_Apps_scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekosfin/GCcoders_Apps_scripts/issues"
+  },
+  "homepage": "https://github.com/ekosfin/GCcoders_Apps_scripts#readme"
+}
