@@ -3,7 +3,7 @@ name: Push to google app scripts
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
