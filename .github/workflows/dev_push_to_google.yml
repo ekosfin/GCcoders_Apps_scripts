@@ -1,0 +1,26 @@
+name: Push to google app scripts
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: namaggarwal/clasp-token-action@v0.0.1
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          refresh-token: ${{ secrets.REFERSH_TOKEN }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
+      - name: install clasp
+        run: npm install -g @google/clasp
+      - name: test push
+        working-directory: ./test
+        run: npm run push-to-app
